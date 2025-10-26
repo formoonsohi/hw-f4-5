@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра и график продаж</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pnotify@4.0.0/dist/PNotify.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pnotify@4.0.0/dist/PNotifyBrightTheme.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="task">
+        <h1>Задание 1: Игра "Нажми правильную клавишу"</h1>
+        <div class="game-container">
+          <div class="message">Нажмите клавишу:</div>
+          <div id="key" class="key-display">A</div>
+          <div class="message" id="status">Начинаем игру!</div>
+          <button id="new-game">Новая игра</button>
+        </div>
+      </div>
+      <div class="task">
+        <h1>Задание 2: График продаж за последний месяц</h1>
+        <div class="chart-container">
+          <canvas id="sales-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
